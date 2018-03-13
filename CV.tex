@@ -1,0 +1,245 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INSTRUCTIONS FOR COMPILING THIS DOCUMENT ("CV.tex")
+%% TEX ---(XeLaTeX)---> PDF:
+%%
+%% Method 1: Use latexmk for fully automated document generation:
+%%   latexmk -xelatex "CV.tex"
+%%   (add the -pvc switch to automatically recompile on changes)
+%%
+%% Method 2: Use XeLaTeX directly:
+%%   xelatex "CV.tex"
+%%   (run multiple times to resolve cross-references if needed)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,10pt,oneside]{article}
+%\documentclass[letterpaper,11pt,oneside]{article}
+
+% Do not stop on errors during compilation.
+\nonstopmode
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{CV-Preamble.tex}
+
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={Conor Scott},
+pdfsubject={http://www.example.com/johndoe},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+pdfpagemode={},
+bookmarks=true,
+unicode=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{Conor Scott}
+
+\begin{subtitle}
+\href{https://www.google.com/maps/place/2543+Alberta+Ave+SW,+Roanoke,+VA+24015}
+{2543 Alberta Ave SW, Roanoke, VA 24015, USA}
+\par
+\href{mailto:conor.r.scott.88@gmail.com}
+{conor.r.scott.88@gmail.com}
+\par
++995 599 54 18 65 (Georgia) | +1 540 420 7072 (USA)
+\end{subtitle}
+\begin{body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\section
+{Education}
+{Education}
+{PDF:Education}
+
+\href{https://www.jhu.edu/}
+{\textbf{Johns Hopkins University}},
+Baltimore, Maryland, USA
+
+\SmallEntryGap
+Master of Science in Applied Mathematics (M.S.)
+\hfill
+\DatestampYMD{2011}{09}{15} --
+\DatestampYMD{2014}{05}{15}
+\begin{detail}
+\BulletItem
+Cumulative GPA: 3.75 / 4.0
+\end{detail}
+
+\EntryGap
+\href{https://www.vt.edu/}
+{\textbf{Virginia Tech}},
+Blacksburg, Virginia, USA
+\par
+Bachelor of Science (B.S.) in
+\href{https://www.cs.vt.edu/}
+{Computer Science}
+\par
+Bachelor of Science (B.S.) in
+\href{https://www.math.vt.edu/}
+{Mathematics}
+\hfill
+\DatestampYMD{2006}{08}{15} --
+\DatestampYMD{2011}{05}{15}
+\begin{detail}
+\BulletItem
+Cumulative GPA: 3.7 / 4.0, In Major GPA: 3.9 / 4.0
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Work EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section
+{Work Experience}
+{Work Experience}
+{PDF:Work}
+
+\href{conscott.github.io}
+{\textbf{ConorTech}}
+\par
+Freelance Blockchain Developer and Consultant
+\hfill
+\DatestampYMD{2017}{11}{01} -- Present
+\begin{detail}
+\BulletItem Consulting for companies building and developing blockchain related technology
+\BulletItem Contributing to Bitcoin Core and related projects
+\end{detail}
+
+
+\href{http://www.clevertech.biz/}
+{\textbf{Clevertech}}
+\par
+OTCmarkets.com API Developer (Under Clevertech Contract) - Remote
+\hfill
+\DatestampYMD{2017}{10}{01} -- \DatestampYMD{2017}{12}{01}
+\begin{detail}
+\BulletItem Managing team of 5 engineers to redesign and update API for financial market data. 
+\end{detail}
+
+\par
+Pave.com Lead Engineer (Under CleverTech Contract) - Remote
+\hfill
+\DatestampYMD{2016}{09}{15} -- Present
+\begin{detail}
+\BulletItem Architected and implemented split of monolithic web app into manageable microservices, including necessary data migrations from MongoDB to PostgreSQL
+\BulletItem Dockerized all services and migrated entire deploy / cron processes to Kubernetes cluster with continuous integration via Jenkins / git integration. 
+\BulletItem Primary developer for service modeling credit worthiness of loan applicants using proprietary data model with 50+ scoring factors. 
+\end{detail} 
+
+\par
+Genymotion API Developer (Under CleverTech Contract) - Remote
+\hfill
+\DatestampYMD{2015}{09}{15} -- \DatestampYMD{2016}{06}{16}
+\begin{detail}
+\BulletItem Implemented microservices for GenyCloud MVP, including android emulator management, licensing, authentication, user profiles, and API gateway. 
+\BulletItem Helped implement billing API to replace existing PrestaShop store. 
+\end{detail}
+
+\EntryGap
+
+\href{http://www.jhuapl.edu/}
+{\textbf{Johns Hopkins University Applied Physics Lab}}
+\par
+Software Engineer (Associate Professional Staff II) - Columbia, MD
+\hfill
+\DatestampYMD{2011}{06}{15} --
+\DatestampYMD{2015}{05}{15}
+\begin{detail}
+
+\BulletItem
+Collaborated in a rapid development and prototyping environment delivering software to several government agencies with urgent time constraints
+\BulletItem
+Lead member of video exploitation team focused on providing real-time encoding, decoding, storage, dissemination, and exploitation capabilities for military grade optical sensors
+\BulletItem
+Implemented command and control interfaces to several optical sensors and automated tracking of moving targets to reduce workload of sensor operator
+\BulletItem
+600+ hours experience on site (80+ hours in military aircraft) working directly with client and users to provide delivery, training, maintenance, and feedback for deployed systems
+\BulletItem
+Two achievement awards (2013,2014) recognizing competency and effort in meeting needs of client
+\end{detail}
+
+\EntryGap
+
+\href{www.ibm.com}
+{\textbf{International Business Machines (IBM)}}
+\par
+Extreme Blue Intern - Austin, TX
+\hfill
+\DatestampYMD{2010}{05}{15} --
+\DatestampYMD{2010}{08}{15}
+\begin{detail}
+\BulletItem
+Helped create a run-time option for the Linux B-tree file system (btrfs) that caches frequently accessed files to solid state drives (SSDs) in hybrid store pools. The project led to a patent (noted below). 
+\end{detail}
+
+\par
+Software Engineer Co-Op - Raleigh, NC
+\hfill
+\DatestampYMD{2009}{01}{15} --
+\DatestampYMD{2009}{08}{15}
+\begin{detail}
+\BulletItem
+Worked with globally distributed development team for delivery of Rational Quality Manager v2.0 with a focus on creating test report templates
+\end{detail}
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\section
+{Technical Skills}
+{Technical Skills}
+{PDF:Skills}
+\textbf{Areas of specialization:} Integration of blockchain technology, backend development with NodeJS/Django/Flask, DevOps on AWS with Jenkins/Kubernetes/Anisble, Linux architecture, multi-threaded processing, image processing and exploitation, real-time encoding and streaming, target detection and tracking, sensor control interfaces, data analysis and correlation
+\newline
+\textbf{Programming Languages:} Strong in C/C++, Python, JS stack, Capable in R, CUDA, Ruby, Java, Perl, Csh, Bash, Lua, Matlab
+
+%%%%%%%%%%%%%%%%%%
+%% PATENTS %%
+%%%%%%%%%%%%%%%%%%
+
+\section
+{Patents}
+{Patents}
+{PDF:Patents}
+\href{https://www.google.com/patents/US20130073783}
+{Conor Scott, Mingming Cao, Ben Chociej, Steven M. French, Matthew R. Lupfer, Steven L. Pratt. 2013. Hybrid data storage management taking into account input/output (I/O) priority, US Patent 20130073783, Filed Sep 15, 2011, Published Mar 21, 2013 }
+\end{body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+\label{LastPage}~
+\end{document}
