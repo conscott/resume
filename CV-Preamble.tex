@@ -69,8 +69,8 @@ BoldItalicFont=FreeSerifBoldItalic]
 \def\ps@plain{%
 \def\@oddhead{}%
 \def\@evenhead{}%
-\def\@oddfoot{\footnotesize\hfill{Page}~{\thepage}~of~\pageref{LastPage}\hfill}%
-\def\@evenfoot{\footnotesize\hfill{Page}~{\thepage}~of~\pageref{LastPage}\hfill}}
+\def\@oddfoot{\footnotesize\hfill\hfill}%
+\def\@evenfoot{\footnotesize\hfill\hfill}}
 \makeatother
 
 \pagestyle{plain}
@@ -195,7 +195,7 @@ BoldItalicFont=FreeSerifBoldItalic]
 
 % Macro: detail (text in smaller font under an entry).
 \newenvironment{detail}
-{\par\begingroup\fontsize{8.6}{10.3}\selectfont}
+{\par\begingroup\fontsize{9.0}{11.0}\selectfont}
 {\par\endgroup\par}
 
 % Macro: BulletItem.
