@@ -35,7 +35,7 @@
 
 % PDF settings and properties.
 \hypersetup{
-pdftitle={\CVTitle},
+pdftitle={Conor Scott - CV},
 pdfauthor={Conor Scott},
 pdfcreator={XeLaTeX},
 pdfproducer={},
@@ -55,7 +55,6 @@ breaklinks}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\begin{minipage}[t][0pt]{\linewidth}
 
 %%%%%%%%%%%%%%%
 % TITLE BLOCK %
@@ -64,14 +63,101 @@ breaklinks}
 \title{Conor Scott}
 
 \begin{subtitle}
-Based in France
+American based in France
 \par
-+1 (540) 632-0629
-\par
-\href{mailto:conor.r.scott.88@gmail.com} {conor.r.scott.88@gmail.com} |
 \href{https://conscott.info} {conscott.info}
+\,\BulletSymbol\,
+\href{https://github.com/conscott}{github.com/conscott}
 \end{subtitle}
 \begin{body}
+
+%%%%%%%%%%%
+%% INTRO %%
+%%%%%%%%%%%
+
+\section
+{Intro}
+{Intro}
+{PDF:Intro}
+Staff Blockchain Engineer with 15+ years of software engineering experience. Currently building cryptocurrency infrastructure at scale: payment rails serving millions of users and custody platforms safeguarding billions in client assets. Deep applied-cryptography specialization (MPC, threshold signatures, HSMs, offline key management). Prior tenure in defense systems and financial-data engineering.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Work EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section
+{Work Experience}
+{Work Experience}
+{PDF:Work}
+
+\EntryGap
+
+\textbf{Independent Consulting}
+\par
+Staff Blockchain Engineer - Remote
+\hfill
+\DatestampYMD{2017}{01}{01} -- Present
+\begin{detail}
+\BulletItem Engineer features on a digital-asset custody platform safeguarding billions of dollars worth of client crypto, built on an MPC threshold signature approval scheme, HSM-backed key management, and cold signing architecture
+\BulletItem Build payment infrastructure (deposits, withdrawals, on/off-ramps) for a top-tier cryptocurrency exchange serving millions of users worldwide
+\BulletItem Develop fund-management infrastructure for the exchange's operational wallets --- hot wallet operations, cold storage reserves, and rebalancing flows between them
+\BulletItem Maintain critical-asset integration code (BTC, ETH, etc.) across custody and exchange platforms; ship capabilities enabling rapid onboarding of new asset classes
+\BulletItem Delivered end-to-end Lightning Network integration at the exchange --- development, infrastructure, testing, deployment, and ongoing maintenance --- a notable industry milestone enabling instant, low-cost Bitcoin payments
+\BulletItem Develop and audit smart contracts for exchange operations (e.g., batched ETH staking transactions) and evaluate third-party contracts before onboarding new assets
+\end{detail}
+
+\EntryGap
+
+\href{https://cache.gold}
+{\textbf{CACHE}}
+\par
+Lead Blockchain Developer - Singapore
+\hfill
+\DatestampYMD{2018}{12}{01} -- \DatestampYMD{2021}{12}{01}
+\begin{detail}
+\BulletItem Developed smart contracts and APIs powering CACHE Gold and GramChain --- a gold-backed token with best-in-class auditability and provenance
+\BulletItem Designed security models and cryptographic protocols (including offline signing) for safeguarding company assets and infrastructure
+\BulletItem Built merchant payment solutions and implemented automated trading algorithms for hedging strategies
+\end{detail}
+
+\EntryGap
+
+\href{http://www.clevertech.biz/}
+{\textbf{Clevertech}} - Remote
+\hfill
+\DatestampYMD{2015}{09}{15} -- \DatestampYMD{2017}{12}{01}
+\begin{detail}
+\BulletItem \textbf{OTCmarkets.com Lead API Developer} (2017): Led engineering team redesigning realtime financial market data API into a scalable, responsive system
+\BulletItem \textbf{Pave.com Lead Engineer} (2016--2017): Split monolithic web app into microservices, migrated MongoDB to PostgreSQL, dockerized services on Kubernetes with Jenkins CI; primary developer for credit-worthiness scoring service processing 80+ risk factors
+\BulletItem \textbf{Genymotion API Developer} (2015--2016): Built GenyCloud MVP microservices (android emulator management, licensing, auth, API gateway); integrated Stripe and PayPal billing
+\end{detail}
+
+\EntryGap
+
+\href{http://www.jhuapl.edu/}
+{\textbf{Johns Hopkins University Applied Physics Lab}}
+\par
+Software Engineer (Associate Professional Staff II) - Columbia, MD
+\hfill
+\DatestampYMD{2011}{06}{15} --
+\DatestampYMD{2015}{05}{15}
+\begin{detail}
+\BulletItem Led video exploitation team delivering real-time encoding, decoding, storage, and dissemination for military-grade optical sensors
+\BulletItem Built low-level command and control interfaces to sensors and radar; developed automated detection and tracking algorithms for moving targets
+\BulletItem Logged 600+ on-site hours (80+ in military aircraft) supporting client delivery, training, and maintenance of deployed mission systems
+\end{detail}
+
+\EntryGap
+
+\href{https://www.ibm.com}
+{\textbf{International Business Machines (IBM)}}
+\par
+Extreme Blue Intern - Austin, TX
+\hfill
+\DatestampYMD{2010}{05}{15} --
+\DatestampYMD{2010}{08}{15}
+\begin{detail}
+\BulletItem Co-developed a runtime option for the Linux B-tree filesystem (btrfs) caching frequently accessed files to SSDs in hybrid storage pools (patent below)
+\end{detail}
 
 %%%%%%%%%%%%%%%
 %% EDUCATION %%
@@ -109,104 +195,16 @@ Bachelor of Science (B.S.) in
 \DatestampYMD{2011}{05}{15}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-%% Work EXPERIENCE %%
+%% OPEN SOURCE          %
 %%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section
-{Work Experience}
-{Work Experience}
-{PDF:Work}
-
-\EntryGap
-
-\href{https://conscott.info}
-{\textbf{ConorTech}}
-\par
-Founder - Blockchain Developer Consultant
-\hfill
-\DatestampYMD{2017}{11}{01} -- \DatestampYMD{2018}{12}{01}
+{Open Source}
+{Open Source}
+{PDF:OpenSource}
 \begin{detail}
-\BulletItem Contributing to Bitcoin Core, Lightning Network implementations, and other open source projects
-\BulletItem Develop smart contracts, integrate cryptocurrency payment and trading systems, and develop security models to protect customer data and cryptocurrency funds.
-\end{detail}
-
-\EntryGap
-
-\href{https://cache.gold}
-{\textbf{CACHE}}
-\par
-Lead Blockchain Developer - Singapore
-\hfill
-\DatestampYMD{2018}{12}{01} -- Present
-\begin{detail}
-\BulletItem Develop smart contracts and APIs interacting with CACHE Gold and GramChain
-\BulletItem Implement company security models and protocols for protecting digital assets
-\BulletItem Merchant payment solutions and trading software development
-\end{detail}
-
-\EntryGap
-
-\href{http://www.clevertech.biz/}
-{\textbf{Clevertech}}
-\par
-OTCmarkets.com Lead API Developer - Remote
-\hfill
-\DatestampYMD{2017}{10}{01} -- \DatestampYMD{2017}{12}{01}
-\begin{detail}
-\BulletItem Led team of engineers to redesign API delivering realtime financial market data into scalable and responsive system
-\end{detail}
-
-\par
-Pave.com Lead Engineer - Remote
-\hfill
-\DatestampYMD{2016}{09}{15} -- \DatestampYMD{2017}{12}{01}
-\begin{detail}
-\BulletItem Split monolithic web app into manageable microservices, including data migrations from MongoDB to PostgreSQL
-\BulletItem Dockerized all services and migrated entire deploy / cron processes to Kubernetes cluster with continuous integration via Jenkins / git
-\BulletItem Primary developer for service modeling credit worthiness of loan applicants, intelligently processing 80+ scoring factors into risk-reduced, competitve loan rates.
-\end{detail}
-
-\par
-Genymotion API Developer - Remote
-\hfill
-\DatestampYMD{2015}{09}{15} -- \DatestampYMD{2016}{06}{16}
-\begin{detail}
-\BulletItem Implemented microservices for GenyCloud MVP, including android emulator management, licensing, authentication, user profiles, and API gateway.
-\BulletItem Helped implement Stripe and Paypal billing API to replace existing PrestaShop store.
-\end{detail}
-
-\EntryGap
-
-\href{http://www.jhuapl.edu/}
-{\textbf{Johns Hopkins University Applied Physics Lab}}
-\par
-Software Engineer (Associate Professional Staff II) - Columbia, MD
-\hfill
-\DatestampYMD{2011}{06}{15} --
-\DatestampYMD{2015}{05}{15}
-\begin{detail}
-
-\BulletItem
-Rapid development and prototyping environment delivering advanced mission systems to multiple government agencies with urgent time constraints
-\BulletItem
-Lead member of video exploitation team focused on providing real-time encoding, decoding, storage, dissemination, and exploitation capabilities for military grade optical sensors
-\BulletItem
-Developed low-level command and control interfaces to optical sensors and radar, building algoritms for automated detection and tracking of moving targets
-\BulletItem
-600+ hours experience on site (80+ hours in military aircraft) working directly with client and sensor operators to provide delivery, training, maintenance, and feedback for deployed systems
-\end{detail}
-
-\EntryGap
-
-\href{www.ibm.com}
-{\textbf{International Business Machines (IBM)}}
-\par
-Extreme Blue Intern - Austin, TX
-\hfill
-\DatestampYMD{2010}{05}{15} --
-\DatestampYMD{2010}{08}{15}
-\begin{detail}
-\BulletItem
-Helped create a run-time option for the Linux B-tree file system (btrfs) to cache frequently accessed files to solid state drives (SSDs) in hybrid storage pools. This project led to a patent (noted below).
+\BulletItem \href{https://github.com/bitcoin/bitcoin}{\textbf{Bitcoin Core}} --- Contributor to the reference Bitcoin protocol implementation
+\BulletItem \href{https://github.com/ElementsProject/lightning}{\textbf{c-lightning}} --- Contributor to a leading Lightning Network implementation
 \end{detail}
 
 %%%%%%%%%%%%
@@ -217,8 +215,13 @@ Helped create a run-time option for the Linux B-tree file system (btrfs) to cach
 {Technical Skills}
 {Technical Skills}
 {PDF:Skills}
-\textbf{Areas of specialization}
-\par Blockchain engineering, applied cryptography, backend development with JS/Python stack, devops and continuous integration, Linux architecture, parallel computing, image processing, real-time encoding and streaming, target detection and tracking, sensor control interfaces, data analysis and correlation
+\textbf{Blockchain \& Applied Cryptography}: Deep knowledge of consensus protocols (PoW, PoS), blockchain architecture (UTXO, account, DAG), cold/hot fund management, HSM-backed key management, offline signing protocols, MPC and threshold signature schemes, key exchange protocols (ECDH, Noise framework), digital signature schemes (ECDSA, EdDSA, Schnorr, BLS), elliptic curve cryptography (secp256k1, ed25519, BLS12-381), smart contracts and auditing tools (Solidity)
+\par\vspace{0.25em}
+\textbf{Languages}: JavaScript / TypeScript, Rust, Python, C / C++, Solidity
+\par\vspace{0.25em}
+\textbf{Infrastructure \& DevOps}: Docker, Kubernetes, CI/CD, Linux platform, command-line-first workflow (vim, bash, GNU toolchain), MariaDB, PostgreSQL, MongoDB, microservice architecture
+\par\vspace{0.25em}
+\textbf{Other technical domains}: Applied mathematics, parallel computing, real-time video encoding/streaming, automated detection \& tracking, sensor control interfaces, large-scale data analysis
 \newline
 
 %%%%%%%%%%%%%%%%%%
@@ -235,6 +238,5 @@ Helped create a run-time option for the Linux B-tree file system (btrfs) to cach
 \href{https://www.google.com/patents/US20130073783}
 {Conor Scott, Mingming Cao, Ben Chociej, Steven M. French, Matthew R. Lupfer, Steven L. Pratt. 2013. Hybrid data storage management taking into account input/output (I/O) priority, US Patent 20130073783, Filed Sep 15, 2011, Published Mar 21, 2013 }
 \end{body}
-\end{minipage}
 \label{LastPage}
 \end{document}
